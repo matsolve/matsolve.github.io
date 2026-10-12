@@ -10,6 +10,7 @@
      논문 게재는 기본적으로 news에 올리지 않는다 — 전체 목록은 publications 탭에 있다.
      예외는 표지(front cover) 선정처럼 그 자체로 뉴스가 되는 건뿐. (2026-09-01 결정) */
   var NEWS = [
+    {d:'2026-10-07', u:'https://www.etnews.com/20261007000009', ko:true, img:'n_etamds', t:'“소재 AI 경쟁력, 데이터 만드는 연구실에서 성패 갈린다”', s:'전자신문 · AMDS 2026 계기 고현석 인터뷰'},
     {d:'2026-09-30', u:'https://www.amds2026.org/', img:'n_amds', t:'Bringing Asia\'s materials-data community together — organising the <b>9th Asian Materials Data Symposium</b> (AMDS 2026)', s:'COEX, Seoul · 30 Sep – 2 Oct'},
     {d:'2026-07-01', label:'2026.07', ko:true, img:'n_grad',
      t:'졸업생 송혜정, 국비유학생으로 뽑혀 싱가포르국립대(NUS) 박사과정으로', s:'NUS 재료공학 — QS 세계대학평가 재료과학 분야 세계 2위 (2026)'},

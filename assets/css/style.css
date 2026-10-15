@@ -261,6 +261,10 @@ figcaption{font-size:.82rem;color:var(--muted);margin-top:9px;line-height:1.5}
 .pi .role{color:var(--accent);font-size:.9rem;margin-top:3px;font-family:"JetBrains Mono",monospace;letter-spacing:.02em}
 .pi p{font-size:.95rem;margin-top:12px}
 .pi .where{font-size:.82rem;color:var(--muted);margin-top:5px}
+.pi .edu{list-style:none;margin:16px 0 0;padding:12px 0 0;border-top:1px solid var(--rule);font-size:.88rem}
+.pi .edu li{display:grid;grid-template-columns:3.2em 1fr;gap:10px;margin-top:5px}
+.pi .edu .y{font-family:"JetBrains Mono",monospace;color:var(--accent);font-size:.82rem;padding-top:1px}
+.pi .edu .sub{display:block;color:var(--muted);font-size:.8rem}
 .person .r.w{opacity:.78;margin-top:2px}
 .person .mono{
   width:100%;aspect-ratio:1;border-radius:9px;border:1px dashed var(--rule);

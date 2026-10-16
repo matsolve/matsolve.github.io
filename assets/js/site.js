@@ -42,7 +42,12 @@
 
   /* ---------- publications ---------- */
   var PUBS = JSON.parse(document.getElementById('pubdata').textContent);
-  PUBS.sort(function(a,b){ return a.date < b.date ? 1 : a.date > b.date ? -1 : 0; });
+  PUBS.sort(function(a,b){ return a.date < b.date ? 1 : a.date > b.date ? -1 : b.id - a.id; });
+  /* 연도별 연번: 그 해에서 오래된 논문이 1번 (필터와 무관하게 고정) */
+  PUBS.slice().reverse().forEach(function(p, i, arr){
+    var prev = arr[i-1];
+    p.no = (prev && prev.year === p.year) ? prev.no + 1 : 1;
+  });
 
   var ROLE = {
     'first':'first author',
@@ -131,7 +136,7 @@
     return '<div class="entry">'
       + '<div class="thumb">'+(p.fig ? '<img src="assets/img/pub/'+p.id+'.jpg?v=20261016c" alt="" loading="lazy">' : thumb(p.id))+'</div>'
       + '<div>'
-      +   '<div class="entry-title">'+p.title+'</div>'
+      +   '<div class="entry-title"><span class="pub-no">'+p.year+'-'+p.no+'</span>'+p.title+'</div>'
       +   '<div class="entry-authors">'+authors+'</div>'
       +   '<div class="entry-venue"><em>'+p.venue+'</em>, '+MONTH[parseInt(p.date.slice(5,7),10)-1]+' '+p.year+'</div>'
       +   '<div class="pills">'+pills+'</div>'

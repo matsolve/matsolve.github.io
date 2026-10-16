@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://thardaway1.github.io/matsolve-homepage/sitemap.xml
+Sitemap: https://matsolve.github.io/sitemap.xml

@@ -134,7 +134,7 @@
       + ' · <b>Published</b> ' + p.date;
 
     return '<div class="entry">'
-      + '<div class="thumb">'+(p.fig ? '<img src="assets/img/pub/'+p.id+'.jpg?v=20261017f" alt="" loading="lazy">' : thumb(p.id))+'</div>'
+      + '<div class="thumb">'+(p.fig ? '<img src="assets/img/pub/'+p.id+'.jpg?v=20261017g" alt="" loading="lazy">' : thumb(p.id))+'</div>'
       + '<div>'
       +   '<div class="entry-title"><span class="pub-no">'+p.year+'-'+p.no+'</span>'+p.title+'</div>'
       +   '<div class="entry-authors">'+authors+'</div>'
